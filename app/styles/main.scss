@@ -4,9 +4,11 @@ $icon-font-path: '../fonts/';
 // endbower
 
 $screen-sm-min: 668px;
-$btn-primary-bg:                    #9c394c;
-$am-heartsfc-link-color:            #fbd429;
-$am-heartsfc-bg-color:              #7f2131;
+// $btn-primary-bg:                    #9c394c;
+$am-heartsfc-bg-color:              #32a79b;
+$btn-primary-bg:                    darken($am-heartsfc-bg-color, 15%);;
+// $am-heartsfc-link-color:            #fbd429;
+$am-heartsfc-link-color:            #ffffff;
 $btn-primary-bg-hover:              darken($btn-primary-bg, 15%);
 
 /**
@@ -240,4 +242,38 @@ h1, h2, h3, .navbar-default .navbar-brand {
     a {
         color: #fff;
     }
+}
+
+
+
+
+
+/* 2017 Changes */
+
+.navbar-brand {
+  padding: 0px;
+  line-height: 100%;
+  height: 100%;
+  // height: 100%;
+}
+.navbar-brand>img {
+  width: 20%;
+  max-width: 120px;
+  height: auto;
+  padding: 0;
+  width: auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand>img {
+  // padding: 7px 14px;
+}
+
+.navbar-nav > li > a {
+  padding: 30px 15px;
+  // height: 75px;
 }
